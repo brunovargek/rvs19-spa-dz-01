@@ -3,22 +3,21 @@
 Cvijet::Cvijet(sf::RenderWindow* window)
 {
 	this->window = window;
-	//set_latica01(latica01);
-	//set_latica02(latica02);
-	//set_latica03(latica03);
-	//set_latica04(latica04);
-	//set_latica05(latica05);
-	//set_latica06(latica06);
+	/*set_latica01(latica01);
+	set_latica02(latica02);
+	set_latica03(latica03);
+	set_latica04(latica04);
+	set_latica05(latica05);
+	set_latica06(latica06);*/
 	set_tucak01(tucak01);
 	set_tucak02(tucak02);
 
 	sf::CircleShape temp_latica;
-	
+
 	int broj_latica = 6;
 	float rotation = 20;
 	for (size_t i = 0; i < broj_latica; i++)
 	{
-		
 		temp_latica.setFillColor(sf::Color(242, 214, 83));
 		temp_latica.setRadius(45.f);
 		temp_latica.setPointCount(3);
@@ -34,104 +33,11 @@ Cvijet::Cvijet(sf::RenderWindow* window)
 	set_list02(list02);
 }
 
-//void Cvijet::set_latica01(sf::CircleShape& latica01)
-//{
-//	this->latica01.setFillColor(sf::Color(252, 186, 3));
-//	this->latica01.setRadius(45.f);
-//	this->latica01.setPointCount(3);
-//	this->latica01.setRotation(0);
-//	this->latica01.setPosition(200, 150);
-//	this->latica01.setOrigin(45, 90);
-//}
-//
-//sf::CircleShape Cvijet::get_latica01()
-//{
-//	return latica01;
-//}
-//
-//void Cvijet::set_latica02(sf::CircleShape& latica02)
-//{
-//	this->latica02.setFillColor(sf::Color(252, 186, 3));
-//	this->latica02.setRadius(45.f);
-//	this->latica02.setPointCount(3);
-//	this->latica02.setRotation(60);
-//	this->latica02.setPosition(200, 150);
-//	this->latica02.setOrigin(45, 90);
-//}
-//
-//sf::CircleShape Cvijet::get_latica02()
-//{
-//	return latica02;
-//}
-//
-//void Cvijet::set_latica03(sf::CircleShape& latica03)
-//{
-//	this->latica03.setFillColor(sf::Color(252, 186, 3));
-//	this->latica03.setRadius(45.f);
-//	this->latica03.setPointCount(3);
-//	this->latica03.setRotation(120);
-//	this->latica03.setPosition(200, 150);
-//	this->latica03.setOrigin(45, 90);
-//
-//}
-//
-//sf::CircleShape Cvijet::get_latica03()
-//{
-//	return latica03;
-//}
-//
-//void Cvijet::set_latica04(sf::CircleShape& latica04)
-//{
-//	this->latica04.setFillColor(sf::Color(252, 186, 3));
-//	this->latica04.setRadius(45.f);
-//	this->latica04.setPointCount(3);
-//	this->latica04.setRotation(180);
-//	this->latica04.setPosition(200, 150);
-//	this->latica04.setOrigin(45, 90);
-//}
-//
-//sf::CircleShape Cvijet::get_latica04()
-//{
-//	return latica04;
-//}
-//
-//void Cvijet::set_latica05(sf::CircleShape& latica05)
-//{
-//	this->latica05.setFillColor(sf::Color(252, 186, 3));
-//	this->latica05.setRadius(45.f);
-//	this->latica05.setPointCount(3);
-//	this->latica05.setRotation(240);
-//	this->latica05.setPosition(200, 150);
-//	this->latica05.setOrigin(45, 90);
-//}
-//
-//sf::CircleShape Cvijet::get_latica05()
-//{
-//	return latica05;
-//}
-//
-//void Cvijet::set_latica06(sf::CircleShape& latica06)
-//{
-//	this->latica06 = latica06;
-//	latica06.setFillColor(sf::Color(252, 186, 3));
-//	latica06.setRadius(45.f);
-//	latica06.setPointCount(3);
-//	latica06.setRotation(300);
-//	latica06.setPosition(200, 150);
-//	latica06.setOrigin(45, 90);
-//}
-//
-//sf::CircleShape Cvijet::get_latica06()
-//{
-//	return latica06;
-//}
-
 void Cvijet::set_tucak01(sf::CircleShape& tucak01)
 {
 	this->tucak01.setFillColor(sf::Color(235, 140, 30));
 	this->tucak01.setRadius(30.f);
 	this->tucak01.setPosition(170, 120);
-
 }
 
 sf::CircleShape Cvijet::get_tucak01()
@@ -151,7 +57,7 @@ sf::CircleShape Cvijet::get_tucak02()
 	return tucak02;
 }
 
-void Cvijet::set_stabljika(sf::RectangleShape &stabljika)
+void Cvijet::set_stabljika(sf::RectangleShape& stabljika)
 {
 	this->stabljika.setFillColor(sf::Color(85, 140, 60));
 	this->stabljika.setSize(sf::Vector2f(10.f, 200.f));
@@ -166,9 +72,11 @@ sf::RectangleShape Cvijet::get_stabljika()
 void Cvijet::set_list01(sf::CircleShape& list01)
 {
 	this->list01.setFillColor(sf::Color(85, 140, 60));
-	this->list01.setRadius(40.f);
-	this->list01.setPointCount(3);
-	this->list01.setPosition(160.f, 300.f);
+	this->list01.setRadius(30.f);
+	this->list01.setPointCount(4);
+	this->list01.setScale(1.f, 2.f);
+	this->list01.setRotation(-30.f);
+	this->list01.setPosition(120.f, 315.f);
 }
 
 sf::CircleShape Cvijet::get_list01()
@@ -180,22 +88,41 @@ void Cvijet::set_list02(sf::CircleShape& list02)
 {
 	this->list02.setFillColor(sf::Color(85, 140, 60));
 	this->list02.setRadius(30.f);
-	this->list02.setPointCount(3);
-	this->list02.setScale(2, 2.f);
+	this->list02.setPointCount(4);
+	this->list02.setScale(1.f, 2.f);
 	this->list02.setRotation(30.f);
-	this->list02.setPosition(145.f, 310.f);
+	this->list02.setPosition(235.f, 285.f);
 }
 
 sf::CircleShape Cvijet::get_list02()
 {
-	return sf::CircleShape();
+	return list02;
 }
 
+void Cvijet::update()
+{
+	float time = clock.getElapsedTime().asSeconds();
 
+	float offsetX = sin(time * 2.f) * 50.f;
+	float noviX = baseX + offsetX;
 
+	for (int i = 0; i < latice.size(); i++)
+	{
+		latice[i].rotate(0.5f);
+		latice[i].setPosition(noviX, 150);
+	}
+
+	tucak01.setPosition(noviX - 30, 120);
+	tucak02.setPosition(noviX - 20, 130);
+	stabljika.setPosition(noviX, 200);
+	list01.setPosition(noviX - 80, 315);
+	list02.setPosition(noviX + 35, 285);
+}
 
 void Cvijet::draw()
 {
+	update();
+
 	/*window->draw(latica01);
 	window->draw(latica02);
 	window->draw(latica03);
@@ -209,9 +136,9 @@ void Cvijet::draw()
 	{
 		window->draw(latice[i]);
 	}
+
 	window->draw(tucak01);
 	window->draw(tucak02);
 	window->draw(list01);
 	window->draw(list02);
-	
 }
